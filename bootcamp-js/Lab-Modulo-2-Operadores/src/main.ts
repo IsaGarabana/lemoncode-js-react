@@ -1,3 +1,5 @@
+import './style.css';
+
 const totalTicket: number = 120;
 const drinksTicket: number = 18;
 const totalPeople: number = 6;
