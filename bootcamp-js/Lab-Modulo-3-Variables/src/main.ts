@@ -2,6 +2,12 @@ import './style.css';
 
 const estiloNombre: string = 'font-size: 15px ; background-color: limegreen';
 
+/* const rock: string = '🎸 Rock'
+const popRock: string = '🎵 Pop Rock'
+const clásica: string = '🎼 clásica'
+const hardRock: string = '🤘 hardRock' 
+*/
+
 interface Genre {
   rock: string;
   clásica: string;
@@ -27,6 +33,7 @@ const beatles: Band = {
   yearOfCreation: 1960,
   isActive: true, //Esto es más falso que ni sé! :D
   style: genre.popRock,
+  //style: popRock
 };
 
 const queen: Band = {
@@ -34,6 +41,7 @@ const queen: Band = {
   yearOfCreation: 1970,
   isActive: false,
   style: genre.rock,
+  //style: rock
 };
 
 const acdc: Band = {
@@ -41,6 +49,7 @@ const acdc: Band = {
   yearOfCreation: 1973,
   isActive: true,
   style: genre.hardRock,
+  //style: hardRock
 };
 
 const beethoven: Band = {
@@ -48,6 +57,7 @@ const beethoven: Band = {
   yearOfCreation: 1770,
   isActive: false,
   style: genre.clásica,
+  //style: clásica
 };
 
 const rolling: Band = {
@@ -55,6 +65,7 @@ const rolling: Band = {
   yearOfCreation: 1962,
   isActive: true,
   style: genre.rock,
+  //style: rock
 };
 
 console.log(
@@ -83,4 +94,7 @@ console.log(
   `Nombre: %c${rolling.name}`,
   estiloNombre,
   `/ Año: ${rolling.yearOfCreation} / Activo: ${rolling.isActive} / Estilo: ${rolling.style}`
+);
+console.log(
+  'Podría hacerse con cada variable de estilo musical por separado, pero he querido probar a meter todos los estilos en un mismo objeto también. He dejado la opción con variables por separado comentadas'
 );
